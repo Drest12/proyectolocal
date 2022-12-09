@@ -23,5 +23,9 @@ public class LocalesServiceImpl implements LocalesService {
     public Optional<Locales> findById(long id) {
         return localesRepository.findById(id);
     }
+         @Override
+    public Locales add(Locales loc) {
+        return localesRepository.save(loc);
+    }
 
 }
