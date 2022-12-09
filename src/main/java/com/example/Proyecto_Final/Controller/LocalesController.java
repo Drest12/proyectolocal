@@ -25,4 +25,10 @@ public class LocalesController {
     public Optional<Locales> findById(@PathVariable Long id){
         return localesservice.findById(id);
     }
+    
+        @PostMapping
+    public Locales add(@RequestBody Locales res){
+        return localesservice.add(res);
+    }
+    
 }
