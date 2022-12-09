@@ -15,4 +15,6 @@ import java.util.Optional;
 public interface LocalesService {
     public List<Locales> findAll();
      public Optional<Locales> findById(long id);
+          //Funcion para agregar datos
+    public Locales add(Locales loc);
 }
